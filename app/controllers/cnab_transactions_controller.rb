@@ -1,7 +1,7 @@
 class CnabTransactionsController < ApplicationController
 
   def index
-    @cnab_transactions = CnabTransaction.paginate(page: params[:page], per_page: 20)
+    @cnab_transactions = CnabTransaction.paginate(page: params[:page], per_page: 10)
   end
 
   def new
