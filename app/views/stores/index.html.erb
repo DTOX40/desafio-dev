@@ -15,7 +15,7 @@
         <tr>
           <td><%= store.name %></td>
           <td><%= store.owner_name %></td>
-          <td><%= number_to_currency store.balance %></td>
+          <td><%= number_to_currency(store.balance, unit: "R$") %></td>
         </tr>
       <% end %>
     </tbody>
