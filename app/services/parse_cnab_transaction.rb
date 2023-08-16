@@ -44,28 +44,19 @@ class ParseCnabTransaction
   end
 
   def type_transaction(row)
-    case row[0..0].to_i
-    when 1
-      "debit"
-    when 2
-      "billet"
-    when 3
-      "financing"
-    when 4
-      "credit"
-    when 5
-      "loan_receipt"
-    when 6
-      "sales"
-    when 7
-      "ted_receipt"
-    when 8
-      "doc_receipt"
-    when 9
-      "rent"
-    else
-      "debit"
-    end
+    transaction_types = {
+      1 => "debit",
+      2 => "billet",
+      3 => "financing",
+      4 => "credit",
+      5 => "loan_receipt",
+      6 => "sales",
+      7 => "ted_receipt",
+      8 => "doc_receipt",
+      9 => "rent"
+    }
+  
+    transaction_types[row[0..0].to_i] || "debit"
   end
 
   def date_transaction(row)
