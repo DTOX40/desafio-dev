@@ -39,6 +39,8 @@ group :test do
   gem 'database_cleaner'
   gem 'simplecov', require: false
   gem 'shoulda-matchers', '~> 4.1'
+  gem 'factory_bot_rails'
+  gem 'faker'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
