@@ -1,24 +1,32 @@
-# README
+# Desafio programação - para vaga de desenvolvedor
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+"O teste consiste em criar uma interface web que aceite upload do arquivo CNAB, faça um parse nos dados e armazene-os em um banco de dados relacional e exiba essas informações em tela."
 
-Things you may want to cover:
+## Descrição do projeto
 
-* Ruby version
+A aplicação aceita o upload de arquivos CNAB.txt para serem parseados e salvos em um banco de dados e exibindo-os em tabelas.
 
-* System dependencies
+## INSTALAÇÃO
 
-* Configuration
+  Para instalação é necessário:
+- Ruby v2.7.3
+- Rails 6.1.7.4
+- PostgreSQL
 
-* Database creation
+## Subir o projeto
 
-* Database initialization
+Para as dependências do projeto certifique de estar na pasta do projeto rode o comando
 
-* How to run the test suite
+bundle install
+yarn install
+rake db:create
+rake db:migrate
+rails s
 
-* Services (job queues, cache servers, search engines, etc.)
+em seguida 
+Acesse a aplicação em http://localhost:3000/
 
-* Deployment instructions
+Importe o arquivo cnab.txt e confira as transações e o saldo
+de acordo com o menu
 
-* ...
+=====================================================================
