@@ -1,0 +1,30 @@
+<h1>Transações</h1>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Tipo</th>
+      <th>Data</th>
+      <th>Valor</th>
+      <th>CPF do beneficiário</th>
+      <th>Número do Cartão utilizado</th>
+      <th>Hora</th>
+      <th>Nome do representante da loja</th>
+      <th>Nome da loja</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @cnab_transactions.each do |transaction| %>
+      <tr>
+        <td><%= CnabTransaction.type_transactions[transaction.type_transaction] %></td>
+        <td><%= transaction.date_transaction %></td>
+        <td><%= transaction.value %></td>
+        <td><%= transaction.cpf %></td>
+        <td><%= transaction.card_number %></td>
+        <td><%= transaction.hour_transaction %></td>
+        <td><%= transaction.store.owner_name %></td>
+        <td><%= transaction.store.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
