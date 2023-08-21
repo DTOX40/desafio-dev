@@ -17,14 +17,13 @@ A aplicação aceita o upload de arquivos CNAB.txt para serem parseados e salvos
 
 Para as dependências do projeto certifique de estar na pasta do projeto rode o comando
 
-bundle install
-yarn install
-rake db:create
-rake db:migrate
-rails s
-
-em seguida 
-Acesse a aplicação em http://localhost:3000/
+- bundle install
+- yarn install
+- rake db:create
+- rake db:migrate
+- rails s
+ 
+- Acesse a aplicação em http://localhost:3000/
 
 Importe o arquivo cnab.txt e confira as transações e o saldo
 de acordo com o menu
