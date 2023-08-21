@@ -1,4 +1,4 @@
-# Desafio programação - para vaga de desenvolvedor
+# Desafio programação
 
 "O teste consiste em criar uma interface web que aceite upload do arquivo CNAB, faça um parse nos dados e armazene-os em um banco de dados relacional e exiba essas informações em tela."
 
